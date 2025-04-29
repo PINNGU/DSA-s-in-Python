@@ -8,13 +8,12 @@
 #the complexity of time is O(n + k) , where the k is how big the numbers go, in worst cases the biggest number can be in billions and smallest in single digits,
 #sometimes making the k larger than the n itself
 
+from sorts.plotting import plot_array
 
-numbers = [2, 7, 54, 17, 29, 64, 43, 33, 47, 4, 82, 90, 40, 78, 92, 68, 76, 37, 19, 25]
 
+def counting(nums):
 
-def sort(nums):
-
-    counter = [0]*100
+    counter = [0]* (max(nums)+1) #im pretty sure this max also does a O(n) on the list too, and alot of array inits, still adds to the same complexity of n+k
     sorted_nums = [0]*len(nums)
 
     for n in nums:
@@ -22,27 +21,16 @@ def sort(nums):
 
     for i in range(1,len(counter)):
         counter[i] = counter[i] + counter[i-1]
+        plot_array(counter,"(Counter) Counting")
 
 
     for n in nums:
         sorted_nums[counter[n]-1] = n
         counter[n] = counter[n] - 1
+        plot_array(sorted_nums,"(Sort) Counting")
 
-    print(sorted_nums)
+    
 
-
-sort(numbers)
-
-#lets try with a different list with some values repeating
-numbers = [
-    3, 5, 2, 4, 6, 1, 5, 3, 2, 4,
-    6, 5, 2, 3, 1, 4, 2, 6, 3, 5,
-    4, 1, 2, 6, 5, 3, 4, 2, 6, 1,
-    5, 3, 2, 4, 6, 1, 5, 2, 3, 4,
-    6, 5, 1, 3, 2, 4, 5, 6, 1, 2
-]
-
-sort(numbers)
 
 
 

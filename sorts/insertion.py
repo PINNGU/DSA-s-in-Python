@@ -2,7 +2,7 @@
 #each element compares itself to the sub array before it , until it finds its sorted place inbetween , and then switches places
 #its time complexity is also O(n^2)
 
-from sorts.plotting import plot_array
+from plotting import plot_array
 
 def insertion(numbers):
     for i in range(1,len(numbers)):

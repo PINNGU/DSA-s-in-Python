@@ -3,7 +3,7 @@
 #until we are left with single elements,then we compare and merge them in order and backtrack to bigger arrays
 #in the end we have everything sorted , with great time usage
 
-from sorts.plotting import plot_merge
+from plotting import plot_merge
 
 
 def merge(numbers):

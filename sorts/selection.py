@@ -3,7 +3,7 @@
 #then continues to the second and third and so forth
 #time compl of O(n^2) , as we loop through everything to find and again to iterate
 
-from sorts.plotting import plot_array
+from plotting import plot_array
 
 def selection(numbers):
 

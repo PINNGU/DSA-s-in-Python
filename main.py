@@ -25,4 +25,4 @@ def option(nums,opt):
     plt.ioff()
     plt.show()
 
-option(numbers,"bubble")
+option(numbers,"counting")

@@ -8,7 +8,7 @@
 #the complexity of time is O(n + k) , where the k is how big the numbers go, in worst cases the biggest number can be in billions and smallest in single digits,
 #sometimes making the k larger than the n itself
 
-from sorts.plotting import plot_array
+from plotting import plot_array
 
 
 def counting(nums):

@@ -2,7 +2,7 @@
 #we sort by digits , using buckets to store each value by its digit (we have as many buckets as the base)
 #time complexity is weird but in good cases (when maximum number isnt in billions , like in counting sort, and most cases are base 10) it has decent complexity - O(d*(n+k))
 
-from sorts.plotting import plot_array
+from plotting import plot_array
 import matplotlib.pyplot as plt
 
 def radix(numbers):

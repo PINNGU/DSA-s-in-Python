@@ -4,7 +4,7 @@
 #every iteration , we get one sorted element ,and the rest unsorted , gets its name from the bubble effect , of bubbles rising to the end of the array
 #inplace algorithm , pretty common for practices
 
-from sorts.plotting import plot_array
+from plotting import plot_array
 import matplotlib.pyplot as plt
 
 

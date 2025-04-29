@@ -12,7 +12,7 @@ def selection(numbers):
         for j in range(i,len(numbers)):
             if numbers[j] < numbers[curr_i]:
                 curr_i = j
-                plot_array(numbers,"Selection",curr_i,i)
+                plot_array(numbers,"Selection Sort",curr_i,i)
 
         temp = numbers[i]
         numbers[i] = numbers[curr_i]

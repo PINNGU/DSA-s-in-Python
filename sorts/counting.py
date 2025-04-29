@@ -21,13 +21,13 @@ def counting(nums):
 
     for i in range(1,len(counter)):
         counter[i] = counter[i] + counter[i-1]
-        plot_array(counter,"(Counter) Counting")
+        plot_array(counter,"Counter of the Counting sort")
 
 
     for n in nums:
         sorted_nums[counter[n]-1] = n
         counter[n] = counter[n] - 1
-        plot_array(sorted_nums,"(Sort) Counting")
+        plot_array(sorted_nums,"Placing in counting Sort")
 
     
 

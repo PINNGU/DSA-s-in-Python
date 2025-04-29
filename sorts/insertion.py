@@ -11,7 +11,7 @@ def insertion(numbers):
                 temp = numbers[j]
                 numbers[j] = numbers[j+1]
                 numbers[j+1] = temp
-                plot_array(numbers,"Insertion",j,j+1)
+                plot_array(numbers,"Insertion Sort",j,j+1)
 
 
 

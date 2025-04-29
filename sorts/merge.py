@@ -25,7 +25,7 @@ def merge(numbers):
 
         ret.extend(left[i:])
         ret.extend(right[j:])
-        plot_merge(ret)
+        #plot_merge(ret)
         return ret
 
     def divide(nums):
@@ -42,3 +42,4 @@ def merge(numbers):
 
     sorted_numbers = divide(numbers)
     print(sorted_numbers)
+    return sorted_numbers
